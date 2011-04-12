@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+	
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>{{ page.title }}</title>
+   <meta name="author" content="Piero Campanelli" />
+   <link rel="icon" type="image/png" href="{{site.baseurl}}/images/logo3.png" />
+   <!-- keywords? -->
+   <!-- RSS -->
+<!--   <link href="http://feeds.feedburner.com/tom-preston-werner" rel="alternate" title="Tom Preston-Werner" type="application/atom+xml" /> -->
+
+	<!-- Stylesheets (based on CSS Blueprint)-->
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/blueprint/print.css" type="text/css" media="print">	
+	<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/enjoythearchitecture.css" type="text/css" media="screen, projection">
+
+</head>
+
+
+<body>
+<div class="container">
+						
+	<div id="header" class="span-15">
+		<h1>Piero Campanelli</h1>
+	</div>
+	
+	<div id="search" class="span-9 last">
+	</div>
+	
+	<hr>
+
+  <div id="content" class="span-18">
+  	{{ content }}
+  </div>
+
+  <div id="span" class="span-1">
+    <p></p>
+  </div>
+
+  <div id="sidebar" class="span-5 last">	
+  </div>	
+ 
+
+  <div id="footer" class="span-24 last">
+	<p>
+	<hr>
+	  <i>COPYRIGHT © 2011, PIERO CAMPANELLI. ALL RIGHTS RESERVED.</i>
+	</p>
+  </div>
+
+</div>
+
+
+
+
+
+
+<!-- ClickTale Bottom part -->
+<!-- ClickTale end of Bottom part -->
+
+<!-- Analytics -->
+{% if site.deploy != 'test' %}
+{% include googleanalytics.html %}
+{% include getclichy.html %}
+{% endif %}
+<!-- Google Analytics end -->
+
+</body>
+</html>
